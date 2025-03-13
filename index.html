@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalized Healthcare Recommendations</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Personalized Healthcare Recommendations</h1>
+        <form id="healthForm">
+            <label for="age">Age:</label>
+            <input type="number" name='a' id="age" required>
+
+            <label for="bmi">BMI:</label>
+            <input type="number" step="0.1"      name ='b'id="bmi" required>
+
+            <label for="exercise_frequency">Exercise Frequency (days/week):</label>
+            <input type="number" name='c' id="exercise_frequency" required>
+
+            <label for="health_score">Health Score (0-100):</label>
+            <input type="number"  name='d'     id="health_score" required>
+
+            <button type="submit">Get Recommendations</button>
+        </form>
+
+        <div id="recommendations" class="recommendations"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
